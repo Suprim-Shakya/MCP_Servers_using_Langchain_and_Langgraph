@@ -36,7 +36,7 @@ async def main():
     )
 
     math_response = await agent.ainvoke(
-        {"messages": [{"role": "user", "content": "What is (9 + 13) * 12?"}]}
+        {"messages": [{"role": "user", "content": "What is (9 + 13) * (30-13)?"}]}
     )
 
     print(f"Math Response: {math_response['messages'][-1].content}")
